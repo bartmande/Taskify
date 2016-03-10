@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- *Główna klasa programu
+ * Główna klasa programu
  */
 public class Taskify extends Application {
 
@@ -18,13 +18,14 @@ public class Taskify extends Application {
     /**
      * Metoda rozpoczynająca działanie programu
      * pierwszym widokiem jest Login
+     *
      * @param primaryStage
      * @throws Exception
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/GUI/Login.fxml"));
-        Scene scene = new Scene(root, 300, 275);
+        Scene scene = new Scene(root);
 
         primaryStage.setTitle("Taskify");
         primaryStage.setScene(scene);
