@@ -1,5 +1,7 @@
 # README #
-### Grupa A ###
+** Informatyka 3 rok **
+ grupa laboratoryjna 4 
+###  Grupa A  
 
 Aplikacja na przedmiot programowanie zespołowe służąca zarządzaniu zadaniami
 Aplikacja jest tworzona w języku Java,, używamy następujących narzędzi:
