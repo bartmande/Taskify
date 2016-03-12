@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import model.SessionFactory;
-import model.User;
+import model.TaskifyUser;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -18,9 +18,9 @@ public class LoginController {
         try {
             Transaction tx;
             tx = session.beginTransaction();
-            User user = new User();
-            user.setUsername("aaa");
-            session.save(user);
+            TaskifyUser taskifyUser = new TaskifyUser();
+            taskifyUser.setUsername("aaa");
+            session.save(taskifyUser);
             tx.commit();
 
         } finally {

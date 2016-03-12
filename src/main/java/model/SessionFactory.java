@@ -15,7 +15,7 @@ public class SessionFactory {
         try {
             Configuration configuration = new Configuration();
             configuration.configure();
-            configuration.addAnnotatedClass(User.class);
+            configuration.addAnnotatedClass(TaskifyUser.class);
             serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
             ourSessionFactory = configuration.buildSessionFactory(serviceRegistry);
         } catch (Throwable ex) {
